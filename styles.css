@@ -5,6 +5,7 @@
   --deep-blue-30: hsla(240, 10%, 72%, 1);
   --deep-blue-80: hsla(243, 25%, 28%, 1);
   --energy-blue: hsla(196, 94%, 72%, 1);
+  --energy-blue-10: hsla(192, 94%, 94%, 1);
   --energy-purple: hsla(256, 81%, 57%, 1);
   --energy-purple-10: hsla(255, 78%, 93%, 1);
   --energy-purple-30: hsla(255, 80%, 86%, 1);
@@ -703,7 +704,7 @@ a#gallery-link:hover {
   /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 360px;
 }
 
 .proc-tabs > div:first-child {
@@ -725,7 +726,7 @@ a#gallery-link:hover {
 }
 .proc-tabs .active {
   cursor: auto;
-  width: calc(340px - 48px);
+  width: calc(360px - 48px);
   flex-grow: 1;
   align-items: flex-end;
   font-size: 32px;
@@ -737,11 +738,13 @@ a#gallery-link:hover {
 }
 .proc-content {
   /* border: 1px solid blue; */
-  min-height: 500px;
+  /* min-height: 500px; */
   flex: 1;
 }
-#proc-content-1 {
+.proc-content > div {
   padding: 24px;
+}
+#proc-content-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -759,10 +762,14 @@ a#gallery-link:hover {
   height: 170px;
 }
 .obj-text {
-  padding: 24px;
+  padding: 0 24px;
   background-color: var(--energy-purple-10);
-  height: 118px;
+  height: 166px;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
 .obj-text h5 {
   margin: 0;
@@ -770,11 +777,154 @@ a#gallery-link:hover {
   font-size: 20px;
   font-weight: 500;
 }
-.obj-text h5 {
+.obj-text p {
   margin: 0;
   color: var(--deep-blue-80);
   /* font-size: 20px;
   font-weight: 500; */
+}
+
+#proc-content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#proc-content-2 > div {
+  display: flex;
+  gap: 16px;
+}
+#proc-content-2 > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0 16px 0 0;
+  padding: 20px;
+  gap: 14px;
+}
+#proc-content-2 > div > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--deep-blue-80);
+  margin: 0;
+}
+#proc-content-2 > div .small {
+  flex-grow: 1;
+}
+#proc-content-2 > div .big {
+  flex-grow: 2;
+}
+#proc-content-2 > div .gray {
+  background-color: var(--system-background);
+}
+#proc-content-2 > div .blue {
+  background-color: var(--energy-blue-10);
+}
+#proc-content-2 > div .green {
+  background-color: var(--green-10);
+}
+#proc-content-2 > div .purple {
+  background-color: var(--energy-purple-10);
+}
+
+#proc-content-3 {
+  flex-direction: column;
+  text-align: center;
+}
+#proc-content-3 h4 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 auto 16px;
+}
+#proc-content-3 h5 {
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--deep-blue);
+}
+.executive-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.executive-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.executive-member img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.executive-member span.name {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.executive-member span.role {
+  font-size: 10px;
+}
+.members-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+.members-row > div {
+  flex: 1;
+}
+.members-row .team-gray-bg {
+  background-color: var(--system-background);
+  border-radius: 0 16px 0 0;
+  padding: 20px;
+}
+.members-row h6 {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--deep-blue);
+}
+.member-profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 14px;
+}
+.member-profile div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.member-profile div span {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsla(0, 0%, 20%, 1);
+}
+.member-profile div span:last-child {
+  font-weight: 400;
+  color: hsla(0, 0%, 40%, 1);
+}
+.member-profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+#proc-content-3 .work {
+  padding: 24px;
+  text-align: center;
+  border: 1px solid var(--energy-purple);
+  border-radius: 0 16px 0 0;
+}
+#proc-content-3 .work h6 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 4px 0;
+}
+#proc-content-3 .work span {
+  font-size: 12px;
+  color: var(--deep-blue);
+  display: block;
 }
 
 /*******/
