@@ -187,6 +187,26 @@
       <section class="trainings-section">
         <div class="main-width">
           <h2>Trainings</h2>
+          <div class="cal-nav">
+            <a onclick="slideCal()">
+              <img src="images/symbol/chevron-right.svg" alt="" />
+            </a>
+            <span></span>
+            <a onclick="slideCal(true)">
+              <img src="images/symbol/chevron-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="calendar" id="calendar">
+            <div class="cal-row">
+              <div class="cal-day">Mon</div>
+              <div class="cal-day">Tue</div>
+              <div class="cal-day">Wed</div>
+              <div class="cal-day">Thu</div>
+              <div class="cal-day">Fri</div>
+              <div class="cal-day">Sat</div>
+              <div class="cal-day">Sun</div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="gallery-section">
@@ -422,5 +442,6 @@
 
     <script src="script.js" async defer></script>
     <script src="populate-team.js" async defer></script>
+    <script src="calendar.js" async defer></script>
   </body>
 </html>

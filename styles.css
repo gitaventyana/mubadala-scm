@@ -498,6 +498,66 @@ a.resource-item:hover {
 
 /*******/
 /*******/
+/*trainings section */
+/*******/
+/*******/
+
+.trainings-section .main-width {
+  position: relative;
+}
+.cal-nav {
+  /* margin: -54px 0 40px auto; */
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 24px;
+  color: var(--energy-purple);
+}
+.cal-nav a {
+  cursor: pointer;
+}
+.cal-nav a:first-child img {
+  transform: rotate(180deg);
+}
+.cal-nav span {
+  margin: 0 10px;
+}
+.calendar {
+  font-size: 14px;
+  color: var(--deep-blue-80);
+}
+.cal-row {
+  display: flex;
+}
+.cal-row .cal-day:last-child {
+  border-radius: 0 12px 0 0;
+  border-right: 1px solid var(--deep-blue-30);
+}
+.cal-row .cal-date:last-child {
+  border-right: 1px solid var(--deep-blue-30);
+}
+.cal-day {
+  flex: 1;
+  border: 1px solid var(--deep-blue-30);
+  border-right: none;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cal-date {
+  flex: 1;
+  border-left: 1px solid var(--deep-blue-30);
+  border-bottom: 1px solid var(--deep-blue-30);
+  padding: 4px;
+  height: 11vh;
+}
+.cal-date.grey-date {
+  color: var(--energy-purple-50);
+}
+
+/*******/
+/*******/
 /*gallery section */
 /*******/
 /*******/
