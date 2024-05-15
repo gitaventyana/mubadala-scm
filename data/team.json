@@ -1,0 +1,315 @@
+[
+  {
+    "id": 1,
+    "name": "Butti Almazrouie",
+    "photo_url": "",
+    "role": "Manager, Supply Chain Management",
+    "location": "Abu Dhabi",
+    "email": "",
+    "teams_link": "",
+    "team": [
+      {
+        "id": 2,
+        "name": "Samy Raafat Fahmy",
+        "role": "Senior Engineer, Contracts",
+        "email": "",
+        "teams_link": ""
+      },
+      {
+        "id": 3,
+        "name": "Manoj Pillai",
+        "role": "Senior Engineer, Contracts",
+        "email": "",
+        "teams_link": ""
+      },
+      {
+        "id": 4,
+        "name": "Sumaya Al Hashmi",
+        "role": "Analyst II",
+        "email": "",
+        "teams_link": ""
+      },
+      {
+        "id": 5,
+        "name": "Mohamed Abdul Malik",
+        "role": "Senior Specialist, Insurance & Supply Chain for Non-Operated Asset",
+        "email": "",
+        "teams_link": ""
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Andreas Kuswardono",
+    "photo_url": "",
+    "role": "Manager, Supply Chain Management",
+    "location": "Indonesia",
+    "email": "",
+    "teams_link": "",
+    "team": [
+      {
+        "id": 7,
+        "name": "Vacant",
+        "role": "Coordinator, Contract Management",
+        "email": "",
+        "teams_link": "",
+        "team": [
+          {
+            "id": 9,
+            "name": "Nur Habibah",
+            "role": "Sr. Officer, Contract Management",
+            "dept": "Performance Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 10,
+            "name": "Muhammad Fauzan",
+            "role": "Jr. Officer, Contract Management",
+            "dept": "Performance Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 11,
+            "name": "Eka Wulandari",
+            "role": "Sr. Officer, Contract Management",
+            "dept": "Contract Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 12,
+            "name": "Nunung Kurnia",
+            "role": "Officer, Contract Management",
+            "dept": "Contract Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 13,
+            "name": "Gadis Ayunda",
+            "role": "Officer, Contract Management",
+            "dept": "Contract Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 14,
+            "name": "Yuka Putri Retnosuri Manti",
+            "role": "Jr. Officer, Contract Management",
+            "dept": "Contract Management",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 15,
+            "name": "Aldi Asrul Putra",
+            "role": "Jr. Officer, Contract Management",
+            "dept": "Contract Management",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Ahmad Wardana",
+        "role": "Coordinator, Material Management",
+        "email": "",
+        "teams_link": "",
+        "team": [
+          {
+            "id": 16,
+            "name": "Ispinardi Harjanto",
+            "role": "Coordinator, Site Warehouse",
+            "dept": "Material Management (Balikpapan)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 17,
+            "name": "Wahyu Handayani",
+            "role": "Inventory & Contract Analyst",
+            "dept": "Material Management (Balikpapan)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 18,
+            "name": "Muhammad Haqqul Yakin",
+            "role": "Document Controller and Cargo Dispatcher",
+            "dept": "Material Management (Balikpapan)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 19,
+            "name": "Hadi Wuriono",
+            "role": "Warehouseman",
+            "dept": "Material Management (Balikpapan)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 20,
+            "name": "Muchamad Ridwan",
+            "role": "Inventory Buyer",
+            "dept": "Material Management (Jakarta)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 21,
+            "name": "Annisa Dinantian",
+            "role": "Inventory Buyer",
+            "dept": "Material Management (Jakarta)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 22,
+            "name": "Yoshi Agitha",
+            "role": "Inventory Buyer",
+            "dept": "Material Management (Jakarta)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 23,
+            "name": "Cipto Nurroso",
+            "role": "Officer, Formalities and Expediter",
+            "dept": "Material Management (Jakarta)",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 24,
+            "name": "Athiyyah Imtiyaaz",
+            "role": "Inventory & Contract Analyst",
+            "dept": "Material Management (Jakarta)",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Nik Nazrulhisham",
+    "photo_url": "",
+    "role": "Manager, Supply Chain Management",
+    "location": "Malaysia",
+    "email": "",
+    "teams_link": "",
+    "team": [
+      {
+        "id": 26,
+        "name": "Iswadi Ibrahim",
+        "role": "Sr. Specialist, C&P",
+        "email": "",
+        "teams_link": "",
+        "team": [
+          {
+            "id": 30,
+            "name": "Chan Mei Yong",
+            "role": "Specialist, C&P",
+            "dept": "Production, Operation & Maintenance",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 31,
+            "name": "Nik Abdullah",
+            "role": "Specialist, C&P",
+            "dept": "Production, Operation & Maintenance",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 32,
+            "name": "Hasbullah Alias",
+            "role": "Specialist, C&P",
+            "dept": "Production, Operation & Maintenance",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 33,
+            "name": "Nurul Fadhilah",
+            "role": "Operational Buyer",
+            "dept": "Production, Operation & Maintenance",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Hassan Abdullah",
+        "role": "Sr. Specialist, C&P",
+        "email": "",
+        "teams_link": "",
+        "team": [
+          {
+            "id": 34,
+            "name": "Azrin Linus",
+            "role": "Sr. Specialist, C&P",
+            "dept": "Project, IT, HC & Business Services",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 35,
+            "name": "Nur Dania Shahar",
+            "role": "Jr. Specialist, C&P",
+            "dept": "Project, IT, HC & Business Services",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 36,
+            "name": "Dayang Arifah Kusnun",
+            "role": "Technical Assistant",
+            "dept": "Project, IT, HC & Business Services",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Mohd Zaki Zainal",
+        "role": "Specialist, C&P",
+        "email": "",
+        "teams_link": "",
+        "team": [
+          {
+            "id": 37,
+            "name": "Nurulhuda",
+            "role": "Specialist, C&P",
+            "dept": "Drilling, Exploration & Subsurface",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 38,
+            "name": "Amalia Aini",
+            "role": "Sr. Coordinator Procurement",
+            "dept": "Drilling, Exploration & Subsurface",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Khairil Anuar",
+        "role": "Assistant Manager, MM&L",
+        "email": "",
+        "teams_link": ""
+      }
+    ]
+  }
+]
