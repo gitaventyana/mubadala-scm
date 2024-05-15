@@ -18,11 +18,11 @@ navBtn.onclick = () => {
 // //helper functions
 // //
 
-// function createElem(tag, className) {
-//   let element = document.createElement(tag);
-//   if (className) element.classList.add(...className);
-//   return element;
-// }
+function createElem(tag, className) {
+  let element = document.createElement(tag);
+  if (className) element.classList.add(...className);
+  return element;
+}
 
 //
 //populate resources section
@@ -90,3 +90,122 @@ fetch("data/gallery.json")
 //
 //populate news section
 //
+
+let newsData = [];
+let newsIdx = 0;
+const newsWrapper = document.querySelector(".news-wrapper");
+const newsNext = document.querySelector(".news-next");
+const newsPrev = document.querySelector(".news-prev");
+
+function createNewsItemElem(data) {
+  let elem = createElem("div", ["news-item"]);
+
+  let imgWrap = createElem("div", ["news-thumbnail"]);
+  let img = createElem("img");
+  img.src = data.thumbnail_url;
+  imgWrap.appendChild(img);
+
+  let imgTexts = createElem("div", ["news-info"]);
+
+  let tags = createElem("div", ["news-tags"]);
+  data.tags.forEach((t) => {
+    let tag = createElem("span");
+    tag.innerHTML = t;
+    tags.appendChild(tag);
+  });
+
+  let title = createElem("h5");
+  title.innerHTML = data.title;
+
+  let desc = createElem("p");
+  desc.innerHTML = data.description;
+
+  let link = createElem("a");
+  link.href = data.link;
+  link.innerHTML = "Read more";
+  let chevron = createElem("img");
+  chevron.src = "images/symbol/chevron-right.svg";
+  link.appendChild(chevron);
+
+  imgTexts.append(tags, title, desc, link);
+
+  let date = createElem("div", ["news-date"]);
+  date.innerHTML = `<span>${data.day}</span><span>${data.month}</span>`;
+
+  elem.append(imgWrap, imgTexts, date);
+  return elem;
+}
+
+fetch("data/news.json")
+  .then((response) => response.json())
+  .then((data) => {
+    newsData = data;
+    let idx = newsIdx;
+    while (idx < newsData.length && idx < 3) {
+      let item = createNewsItemElem(newsData[idx]);
+      newsWrapper.appendChild(item);
+      idx++;
+    }
+    if (idx > 1) {
+      newsNext.classList.add("enabled");
+      enableClick(true);
+    }
+  });
+
+function enableClick(next) {
+  if (next) {
+    newsNext.onclick = () => {
+      slideNews(true);
+      console.log("next");
+    };
+  } else {
+    newsPrev.onclick = () => {
+      slideNews(false);
+      console.log("prev");
+    };
+  }
+}
+
+function slideNews(next) {
+  if (next) {
+    //remove first news item
+    let item = document.querySelector(".news-item:first-child");
+    let parent = item.parentNode;
+    parent.removeChild(item);
+
+    //new item
+    newsIdx++;
+    if (newsIdx + 2 < newsData.length) {
+      item = createNewsItemElem(newsData[newsIdx + 2]);
+      parent.appendChild(item);
+    }
+  } else {
+    //remove last news item
+    let item = document.querySelector(".news-item:last-child");
+    let parent = item.parentNode;
+    parent.removeChild(item);
+
+    //new item
+    newsIdx--;
+    if (newsIdx >= 0) {
+      item = createNewsItemElem(newsData[newsIdx]);
+      parent.prepend(item);
+    }
+  }
+
+  if (newsIdx + 2 >= newsData.length - 1) {
+    newsNext.classList.remove("enabled");
+    newsNext.onclick = null;
+  } else {
+    newsNext.classList.add("enabled");
+    enableClick(true);
+  }
+
+  if (newsIdx > 0) {
+    newsPrev.classList.add("enabled");
+    enableClick(false);
+  } else {
+    newsPrev.classList.remove("enabled");
+    newsPrev.onclick = null;
+  }
+}

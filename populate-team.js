@@ -2,16 +2,6 @@ const emailImg = "images/symbol/mail.svg";
 const teamImg = "images/symbol/people.svg";
 
 //
-//helper functions
-//
-
-function createElem(tag, className) {
-  let element = document.createElement(tag);
-  if (className) element.classList.add(...className);
-  return element;
-}
-
-//
 //populate team section
 //
 let teamData = [];

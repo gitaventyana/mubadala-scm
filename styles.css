@@ -404,6 +404,122 @@ a#gallery-link:hover {
   animation: slideLeft 22s linear infinite;
 }
 
+/* 
+news section */
+
+.news-slider {
+  margin-top: -54px;
+}
+.news-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.news-nav button {
+  padding: 8px;
+  background-color: var(--deep-blue-50);
+  border-radius: 0 8px 0 8px;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.news-nav button.enabled {
+  cursor: pointer;
+  background-color: var(--deep-blue);
+}
+.news-prev img {
+  transform: rotate(180deg);
+}
+.news-wrapper {
+  display: flex;
+  gap: 32px;
+  margin-top: 20px;
+}
+.news-item {
+  /* border: 1px solid red; */
+  background-color: var(--system-background);
+  min-width: 380px;
+  max-width: 400px;
+  flex-grow: 1;
+  border-radius: 0 48px 0 0;
+  position: relative;
+}
+.news-date {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background-color: var(--energy-purple);
+  border-radius: 0 8px 0 0;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-date span:first-child {
+  font-size: 28px;
+}
+.news-date span:last-child {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.news-thumbnail {
+  /* border: 1px solid red; */
+  border-radius: 0 48px 0 48px;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+.news-thumbnail img {
+  object-fit: cover;
+  width: 100%;
+}
+.news-tags span {
+  padding: 4px 6px;
+  background-color: var(--energy-purple-10);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--energy-purple);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.news-info {
+  padding: 20px;
+}
+.news-info h5 {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--deep-blue);
+  margin: 0;
+  margin-top: 8px;
+}
+.news-info p {
+  color: var(--deep-blue-80);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news-info a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--energy-purple);
+}
+.news-info a img {
+  color: var(--energy-purple);
+}
+.news-info a:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: var(--deep-blue);
   padding: 80px 0;
