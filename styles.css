@@ -10,6 +10,7 @@
   --energy-purple-30: hsla(255, 80%, 86%, 1);
   --energy-purple-50: hsla(256, 79%, 77%, 1);
   --system-background: hsla(180, 3%, 94%, 1);
+  --green-10: hsla(161, 93%, 94%, 1);
 }
 
 html {
@@ -202,9 +203,125 @@ h2 {
   background-size: cover;
 }
 .pie-container {
-  border: 1px solid red;
-  width: 60vh;
+  /* border: 1px solid red; */
+  width: 65vh;
+  height: 65vh;
   margin: 60px auto;
+  position: relative;
+}
+.pie-container .center {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  bottom: 30%;
+  left: 30%;
+  right: 30%;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+.circle {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: white;
+}
+.slice {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--energy-purple-10);
+  /* width: 400px;
+  height: 400px; */
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 16.66%, 52% 49%);
+  border-radius: 50%;
+  transform: rotate(-26deg);
+  transition: transform 0.8s ease;
+}
+.slice:hover {
+  transform: rotate(-26deg) scale(1.3);
+  background-color: var(--green-10);
+}
+.slice-text {
+  position: absolute;
+  top: 12%;
+  right: 28%;
+  z-index: 3;
+  font-size: 12px;
+  transform: rotate(26deg);
+  color: var(--energy-purple);
+  font-weight: 500;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+#slice-2 {
+  transform: rotate(34deg);
+}
+#slice-2 .slice-text {
+  transform: rotate(-34deg);
+  right: 24%;
+}
+#slice-2:hover {
+  transform: rotate(34deg) scale(1.3);
+}
+#slice-3 {
+  transform: rotate(94deg);
+}
+#slice-3 .slice-text {
+  transform: rotate(-94deg);
+  top: 10%;
+  right: 22%;
+}
+#slice-3:hover {
+  transform: rotate(94deg) scale(1.3);
+}
+#slice-4 {
+  transform: rotate(154deg);
+}
+#slice-4 .slice-text {
+  transform: rotate(-154deg);
+  top: 10%;
+  right: 25%;
+}
+#slice-4:hover {
+  transform: rotate(154deg) scale(1.3);
+}
+#slice-5 {
+  transform: rotate(214deg);
+}
+#slice-5 .slice-text {
+  transform: rotate(-214deg);
+  top: 12%;
+  right: 30%;
+}
+#slice-5:hover {
+  transform: rotate(214deg) scale(1.3);
+}
+#slice-6 {
+  transform: rotate(274deg);
+}
+#slice-6 .slice-text {
+  transform: rotate(-274deg);
+  top: 10%;
+  right: 30%;
+}
+#slice-6:hover {
+  transform: rotate(274deg) scale(1.3);
 }
 
 /*******/
@@ -587,6 +704,10 @@ a#gallery-link:hover {
   display: flex;
   flex-direction: column;
   width: 340px;
+}
+
+.proc-tabs > div:first-child {
+  border-top: 1px solid var(--deep-blue-10);
 }
 .proc-tabs > div {
   flex-grow: 0;
