@@ -190,6 +190,29 @@ h2 {
   margin: 0;
 }
 
+/*******/
+/*******/
+/*governance section */
+/*******/
+/*******/
+
+.governance-section {
+  background-image: url("images/decor/bg-vector-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pie-container {
+  border: 1px solid red;
+  width: 60vh;
+  margin: 60px auto;
+}
+
+/*******/
+/*******/
+/*resources section */
+/*******/
+/*******/
+
 .resources-section {
   background-color: var(--system-background);
 }
@@ -217,12 +240,24 @@ a.resource-item:hover {
   max-width: 80%;
 }
 
+/*******/
+/*******/
+/*analytics section */
+/*******/
+/*******/
+
 .analytics-section {
   background-image: url("images/decor/intersect.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+/*******/
+/*******/
+/*team section */
+/*******/
+/*******/
 
 .profile {
   background-color: #fff;
@@ -343,6 +378,12 @@ a.resource-item:hover {
   gap: 20px;
 }
 
+/*******/
+/*******/
+/*gallery section */
+/*******/
+/*******/
+
 a#gallery-link {
   float: right;
   margin-top: -54px;
@@ -404,9 +445,17 @@ a#gallery-link:hover {
   animation: slideLeft 22s linear infinite;
 }
 
-/* 
-news section */
+/*******/
+/*******/
+/*news section */
+/*******/
+/*******/
 
+.news-section {
+  background-image: url("images/decor/bg-vector.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .news-slider {
   margin-top: -54px;
 }
@@ -519,6 +568,99 @@ news section */
 .news-info a:hover {
   text-decoration: underline;
 }
+
+/*******/
+/*******/
+/*procurement section */
+/*******/
+/*******/
+
+.proc-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 32px;
+}
+.proc-tabs {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+.proc-tabs > div {
+  flex-grow: 0;
+  height: 60px;
+  /* width: 100%; */
+  border-bottom: 1px solid var(--deep-blue-10);
+  padding: 24px;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--deep-blue);
+  display: flex;
+  align-items: center;
+}
+.proc-tabs .active {
+  cursor: auto;
+  width: calc(340px - 48px);
+  flex-grow: 1;
+  align-items: flex-end;
+  font-size: 32px;
+  background-color: var(--energy-purple-10);
+  border-color: var(--energy-purple);
+  background-image: url("images/decor/tab-vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.proc-content {
+  /* border: 1px solid blue; */
+  min-height: 500px;
+  flex: 1;
+}
+#proc-content-1 {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 20px;
+}
+#proc-content-1 > div {
+  display: flex;
+  align-items: center;
+}
+#proc-content-1 > div:nth-child(even) {
+  width: 80%;
+}
+#proc-content-1 img {
+  height: 170px;
+}
+.obj-text {
+  padding: 24px;
+  background-color: var(--energy-purple-10);
+  height: 118px;
+  width: fit-content;
+}
+.obj-text h5 {
+  margin: 0;
+  color: var(--deep-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+.obj-text h5 {
+  margin: 0;
+  color: var(--deep-blue-80);
+  /* font-size: 20px;
+  font-weight: 500; */
+}
+
+/*******/
+/*******/
+/*footer section */
+/*******/
+/*******/
 
 footer {
   background-color: var(--deep-blue);

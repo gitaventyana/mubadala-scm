@@ -209,3 +209,45 @@ function slideNews(next) {
     newsPrev.onclick = null;
   }
 }
+
+const proc1 = document.getElementById("proc-content-1");
+const proc2 = document.getElementById("proc-content-2");
+const proc3 = document.getElementById("proc-content-3");
+const proc4 = document.getElementById("proc-content-4");
+const tab1 = document.getElementById("proc-1");
+const tab2 = document.getElementById("proc-2");
+const tab3 = document.getElementById("proc-3");
+const tab4 = document.getElementById("proc-4");
+proc2.style.display = "none";
+proc3.style.display = "none";
+proc4.style.display = "none";
+
+function resetTabs() {
+  tab1.classList.remove("active");
+  tab2.classList.remove("active");
+  tab3.classList.remove("active");
+  tab4.classList.remove("active");
+  proc1.style.display = "none";
+  proc2.style.display = "none";
+  proc3.style.display = "none";
+  proc4.style.display = "none";
+}
+
+function clickTab(elem, content) {
+  resetTabs();
+  elem.classList.add("active");
+  content.style.display = "flex";
+}
+
+tab1.onclick = () => {
+  clickTab(tab1, proc1);
+};
+tab2.onclick = () => {
+  clickTab(tab2, proc2);
+};
+tab3.onclick = () => {
+  clickTab(tab3, proc3);
+};
+tab4.onclick = () => {
+  clickTab(tab4, proc4);
+};
