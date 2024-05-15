@@ -7,12 +7,15 @@ navBtn.onclick = () => {
   console.log(menu.style.display);
   if (!menu.style.display || menu.style.display == "none") {
     menu.style.display = "block";
-    console.log("show");
   } else {
     menu.style.display = "none";
-    console.log("hide");
   }
 };
+function gotoSection(section) {
+  let dest = document.querySelector(`.${section}`);
+  dest.scrollIntoView({ behavior: "smooth" });
+  menu.style.display = "none";
+}
 
 // //
 // //helper functions
