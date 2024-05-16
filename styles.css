@@ -936,6 +936,7 @@ a#gallery-link:hover {
   color: var(--deep-blue);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .proc-tabs .active {
   cursor: auto;
@@ -948,6 +949,17 @@ a#gallery-link:hover {
   background-image: url("images/decor/tab-vector.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 60px;
+}
+.proc-tabs div:not(.active) svg {
+  color: var(--deep-blue-30);
+}
+.proc-tabs div:not(.active):hover,
+.proc-tabs div:not(.active):hover svg {
+  color: var(--energy-purple);
+}
+.proc-tabs .active svg {
+  display: none;
 }
 .proc-content {
   /* border: 1px solid blue; */
