@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Procurement Training",
+    "date": "2024-05-02",
+    "time_start": "2.00 pm",
+    "time_end": "4.00 pm",
+    "organizer_name": "Nur Habibah",
+    "organizer_photo": "images/placeholders/photo.png",
+    "attachments": [
+      {
+        "file_name": "Training Materials.pptx",
+        "file_link": ""
+      },
+      {
+        "file_name": "Training Guidelines.pptx",
+        "file_link": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Procurement Training",
+    "date": "2024-05-08",
+    "time_start": "8.00 am",
+    "time_end": "9.00 am",
+    "organizer_name": "Nur Habibah",
+    "organizer_photo": "images/placeholders/photo.png",
+    "attachments": [
+      {
+        "file_name": "Training Materials.pptx",
+        "file_link": ""
+      },
+      {
+        "file_name": "Training Guidelines.pptx",
+        "file_link": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Procurement Training",
+    "date": "2024-05-08",
+    "time_start": "10.00 am",
+    "time_end": "12.00 am",
+    "organizer_name": "Nur Habibah",
+    "organizer_photo": "images/placeholders/photo.png",
+    "attachments": [
+      {
+        "file_name": "Training Materials.pptx",
+        "file_link": ""
+      },
+      {
+        "file_name": "Training Guidelines.pptx",
+        "file_link": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Procurement Training",
+    "date": "2024-05-27",
+    "time_start": "8.00 am",
+    "time_end": "9.00 am",
+    "organizer_name": "Nur Habibah",
+    "organizer_photo": "images/placeholders/photo.png",
+    "attachments": [
+      {
+        "file_name": "Training Materials.pptx",
+        "file_link": ""
+      },
+      {
+        "file_name": "Training Guidelines.pptx",
+        "file_link": ""
+      }
+    ]
+  }
+]

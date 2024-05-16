@@ -26,6 +26,8 @@ Data dummy diambil dari file `data/team.json`
 
 ### trainings-section
 
+Data dummy diambil dari file `data/trainings.json`
+
 ### gallery-section
 
 Data dummy diambil dari file `data/gallery.json`

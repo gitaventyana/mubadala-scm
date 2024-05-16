@@ -558,9 +558,30 @@ a.resource-item:hover {
   border-bottom: 1px solid var(--deep-blue-30);
   padding: 4px;
   height: 11vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cal-date.grey-date {
-  color: var(--energy-purple-50);
+  color: var(--energy-purple-30);
+}
+.cal-event {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 6px;
+  border-radius: 0 4px 0 0;
+  border: 1px solid var(--energy-purple);
+  background-color: var(--energy-purple-10);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--deep-blue);
+  margin-top: 2px;
+  cursor: pointer;
+}
+.cal-event span:last-child {
+  /* font-size: 10px; */
+  font-weight: 400;
+  /* color: var(--deep-blue); */
 }
 
 /*******/
