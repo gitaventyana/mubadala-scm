@@ -279,6 +279,7 @@ tab4.onclick = () => {
 
 const streamItems = document.querySelectorAll(".stream-item");
 const circles = document.querySelectorAll(".stream-circle");
+const tables = document.querySelectorAll(".stream-table");
 const centerCircle = document.getElementById("center-circle");
 streamItems.forEach((item) => {
   item.onmouseenter = () => {
@@ -305,9 +306,11 @@ function hoverOutStreamItem(item) {
 function clickStreamItem(item) {
   let id = item.id;
   let circle = document.getElementById(`${id}-circle`);
+  let table = document.getElementById(`${id}-table`);
   if (item.classList.contains("active")) {
     item.classList.remove("active");
     circle.classList.remove("active");
+    table.style.display = "none";
     centerCircle.classList.remove("inactive");
   } else {
     streamItems.forEach((e) => {
@@ -316,8 +319,12 @@ function clickStreamItem(item) {
     circles.forEach((e) => {
       e.classList.remove("active");
     });
+    tables.forEach((t) => {
+      t.style.display = "none";
+    });
     item.classList.add("active");
     circle.classList.add("active");
+    table.style.display = "block";
     centerCircle.classList.add("inactive");
   }
 }
