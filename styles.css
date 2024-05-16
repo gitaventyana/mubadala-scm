@@ -400,7 +400,7 @@ a.resource-item:hover {
   padding: 20px;
   cursor: pointer;
   flex-grow: 1;
-  min-width: 270px;
+  /* min-width: 270px; */
   text-overflow: ellipsis;
 }
 .leader-row {
@@ -505,9 +505,11 @@ a.resource-item:hover {
 }
 .team-layer .teams {
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /*******/
