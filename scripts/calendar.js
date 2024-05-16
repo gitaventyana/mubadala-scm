@@ -147,6 +147,20 @@ function getEventData() {
         if (dateElem) {
           dateElem.appendChild(elem);
         }
+
+        elem.onclick = () => {
+          showEventDetail(e);
+        };
       });
     });
+}
+
+const eventPopup = document.querySelector(".event-popup");
+const closeBtn = document.getElementById("close-popup");
+closeBtn.onclick = () => {
+  eventPopup.style.display = "none";
+};
+
+function showEventDetail(event) {
+  eventPopup.style.display = "flex";
 }
