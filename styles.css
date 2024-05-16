@@ -32,11 +32,17 @@ body {
 }
 header {
   position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
   background-color: hsla(252, 100%, 10%, 0.5);
+  transition: all 0.4s ease;
+}
+header.hide-bar {
+  top: -110px;
 }
 .header-bar {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +84,7 @@ nav a {
   padding: 10px 14px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 nav a:hover {
   background-color: var(--energy-purple-30);

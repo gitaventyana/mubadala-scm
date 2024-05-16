@@ -1,5 +1,21 @@
 const defaultPhoto = "images/placeholders/photo.png";
 
+//header bar hide/show
+let lastpos = window.scrollY;
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+window.onscroll = () => {
+  let currentPos = window.scrollY;
+  if (currentPos > lastpos) {
+    console.log("down");
+    header.classList.add("hide-bar");
+  } else {
+    console.log("up");
+    header.classList.remove("hide-bar");
+  }
+  lastpos = currentPos;
+};
+
 //menu button
 const navBtn = document.querySelector(".nav-button");
 const menu = document.querySelector("nav");
@@ -16,6 +32,12 @@ function gotoSection(section) {
   dest.scrollIntoView({ behavior: "smooth" });
   menu.style.display = "none";
 }
+
+body.onclick = (event) => {
+  if (event.target !== navBtn) {
+    menu.style.display = "none";
+  }
+};
 
 // //
 // //helper functions
