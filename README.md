@@ -18,7 +18,7 @@ Data dummy diambil dari file `data/resources.json`
 
 ### analytics-section
 
-Dibiarkan kosong karena akan menggunakan embed iframe.
+Image placeholder
 
 ### the-team-section
 

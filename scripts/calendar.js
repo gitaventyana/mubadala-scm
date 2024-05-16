@@ -32,11 +32,7 @@ function resetCalendar() {
 }
 
 function initializeCalendar() {
-  console.log("init calendar", currentMonth, currentYear);
   let dow = new Date(currentYear, currentMonth, 1).getDay();
-  // console.log(dow);
-  // console.log(new Date(currentYear, currentMonth, 1));
-  // console.log(new Date(currentYear, currentMonth, 0));
   let last = lastday(currentMonth, currentYear);
   let d = 1;
   while (d <= last) {

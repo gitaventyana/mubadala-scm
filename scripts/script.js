@@ -7,10 +7,8 @@ const body = document.querySelector("body");
 window.onscroll = () => {
   let currentPos = window.scrollY;
   if (currentPos > lastpos) {
-    console.log("down");
     header.classList.add("hide-bar");
   } else {
-    console.log("up");
     header.classList.remove("hide-bar");
   }
   lastpos = currentPos;
@@ -19,8 +17,8 @@ window.onscroll = () => {
 //menu button
 const navBtn = document.querySelector(".nav-button");
 const menu = document.querySelector("nav");
-navBtn.onclick = () => {
-  console.log(menu.style.display);
+navBtn.onclick = (event) => {
+  console.log("menu", menu.style.display);
   if (!menu.style.display || menu.style.display == "none") {
     menu.style.display = "block";
   } else {

@@ -72,7 +72,6 @@ function resetExpand(isLeader, elem) {
 
 // get person data object
 function getPersonData(ids) {
-  console.log(ids);
   let source = teamData;
   let person;
   ids.forEach((id) => {
@@ -88,7 +87,6 @@ function getPersonData(ids) {
       source = source[idx].team;
     }
   });
-  console.log(person);
   return person;
 }
 
@@ -164,7 +162,6 @@ fetch("data/team.json")
   .then((response) => response.json())
   .then((data) => {
     teamData = JSON.parse(JSON.stringify(data));
-    console.log(teamData);
 
     //populate leader row data
     teamData.forEach((person) => {
