@@ -1,22 +1,22 @@
 [
   {
     "img_url": "images/logo/oracle.png",
-    "link": "#"
+    "link": "https://sscora01.mubadalaenergy.com/"
   },
   {
     "img_url": "images/logo/gep-smart.png",
-    "link": "#"
+    "link": "https://uat-smart-idp.gep.com/"
   },
   {
     "img_url": "images/logo/markit.png",
-    "link": "#"
+    "link": "https://my.ihs.com/"
   },
   {
     "img_url": "images/logo/diligent.png",
-    "link": "#"
+    "link": "https://cms.securimate.com/"
   },
   {
     "img_url": "images/logo/prosys.png",
-    "link": "#"
+    "link": "https://idmp-prosys.mubadalaenergy.com/#/home"
   }
 ]

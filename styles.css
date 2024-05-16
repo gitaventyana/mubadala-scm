@@ -63,17 +63,26 @@ header a {
   display: flex;
   align-items: center;
   color: #fff;
+  font-size: 14px;
   gap: 8px;
   font-weight: 600;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  height: 60px;
 }
 nav {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 0;
   width: 180px;
+  /* display: none; */
+}
+nav.show,
+nav.clicked {
+  display: block;
+}
+nav.hide {
   display: none;
 }
 nav a {

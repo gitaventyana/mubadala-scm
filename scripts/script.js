@@ -17,25 +17,25 @@ window.onscroll = () => {
 //menu button
 const navBtn = document.querySelector(".nav-button");
 const menu = document.querySelector("nav");
-navBtn.onclick = (event) => {
-  console.log("menu", menu.style.display);
-  if (!menu.style.display || menu.style.display == "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
+const navMenu = document.querySelector(".nav-menu");
+
+navBtn.onclick = clickMenu;
+navMenu.onmouseenter = () => {
+  menu.classList.remove("hide");
 };
+navMenu.onmouseleave = () => {
+  menu.classList.add("hide");
+};
+
+function clickMenu() {
+  menu.classList.toggle("hide");
+}
+
 function gotoSection(section) {
   let dest = document.querySelector(`.${section}`);
   dest.scrollIntoView({ behavior: "smooth" });
-  menu.style.display = "none";
+  menu.classList.add("hide");
 }
-
-body.onclick = (event) => {
-  if (event.target !== navBtn) {
-    menu.style.display = "none";
-  }
-};
 
 // //
 // //helper functions
@@ -56,6 +56,7 @@ fetch("data/resources.json")
     const wrapper = document.querySelector(".resource-logos");
     data.forEach((element) => {
       let link = document.createElement("a");
+      link.target = "_blank";
       link.href = element.link;
       link.classList.add("resource-item");
       let temp_img = document.createElement("img");
@@ -179,12 +180,10 @@ function enableClick(next) {
   if (next) {
     newsNext.onclick = () => {
       slideNews(true);
-      console.log("next");
     };
   } else {
     newsPrev.onclick = () => {
       slideNews(false);
-      console.log("prev");
     };
   }
 }
