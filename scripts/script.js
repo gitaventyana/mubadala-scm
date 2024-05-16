@@ -276,3 +276,48 @@ tab3.onclick = () => {
 tab4.onclick = () => {
   clickTab(tab4, proc4);
 };
+
+const streamItems = document.querySelectorAll(".stream-item");
+const circles = document.querySelectorAll(".stream-circle");
+const centerCircle = document.getElementById("center-circle");
+streamItems.forEach((item) => {
+  item.onmouseenter = () => {
+    hoverStreamItem(item);
+  };
+  item.onmouseleave = () => {
+    hoverOutStreamItem(item);
+  };
+  item.onclick = () => {
+    clickStreamItem(item);
+  };
+});
+
+function hoverStreamItem(item) {
+  let id = item.id;
+  let circle = document.getElementById(`${id}-circle`);
+  circle.classList.add("hovering");
+}
+function hoverOutStreamItem(item) {
+  let id = item.id;
+  let circle = document.getElementById(`${id}-circle`);
+  circle.classList.remove("hovering");
+}
+function clickStreamItem(item) {
+  let id = item.id;
+  let circle = document.getElementById(`${id}-circle`);
+  if (item.classList.contains("active")) {
+    item.classList.remove("active");
+    circle.classList.remove("active");
+    centerCircle.classList.remove("inactive");
+  } else {
+    streamItems.forEach((e) => {
+      e.classList.remove("active");
+    });
+    circles.forEach((e) => {
+      e.classList.remove("active");
+    });
+    item.classList.add("active");
+    circle.classList.add("active");
+    centerCircle.classList.add("inactive");
+  }
+}

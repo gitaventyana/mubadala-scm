@@ -34,9 +34,9 @@ function resetCalendar() {
 function initializeCalendar() {
   console.log("init calendar", currentMonth, currentYear);
   let dow = new Date(currentYear, currentMonth, 1).getDay();
-  console.log(dow);
-  console.log(new Date(currentYear, currentMonth, 1));
-  console.log(new Date(currentYear, currentMonth, 0));
+  // console.log(dow);
+  // console.log(new Date(currentYear, currentMonth, 1));
+  // console.log(new Date(currentYear, currentMonth, 0));
   let last = lastday(currentMonth, currentYear);
   let d = 1;
   while (d <= last) {
@@ -131,14 +131,14 @@ function getEventData() {
     .then((data) => {
       data.forEach((d) => {
         let month = Number(d.date.split("-")[1]);
-        console.log("data month", month);
-        console.log("current", currentMonth);
+        // console.log("data month", month);
+        // console.log("current", currentMonth);
         if (month == currentMonth + 1) {
           eventsData.push(d);
         }
       });
 
-      console.log("length events", eventsData.length);
+      // console.log("length events", eventsData.length);
       eventsData.forEach((e) => {
         let elem = createEventElem(e);
         let dayNum = new Date(e.date).getDate();
