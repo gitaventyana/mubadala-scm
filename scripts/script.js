@@ -325,3 +325,14 @@ function clickStreamItem(item) {
     centerCircle.classList.add("inactive");
   }
 }
+
+const progressBars = document.querySelectorAll(".progress-cell");
+progressBars.forEach((cell) => {
+  let txt = cell.innerText.split("\n");
+  let val = Number(txt[txt.length - 2].slice(0, -1));
+  let gray = cell.querySelector(".gray-bar");
+  if (val) {
+    let w = ((100 - val) / 100) * 40;
+    gray.style.width = `${w}px`;
+  }
+});

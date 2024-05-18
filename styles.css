@@ -1005,6 +1005,7 @@ a#gallery-link:hover {
 .obj-text p {
   margin: 0;
   color: var(--deep-blue-80);
+  text-align: justify;
   /* font-size: 20px;
   font-weight: 500; */
 }
@@ -1100,7 +1101,7 @@ a#gallery-link:hover {
 .members-row .team-gray-bg {
   background-color: var(--system-background);
   border-radius: 0 16px 0 0;
-  padding: 20px;
+  padding: 16px;
 }
 .members-row h6 {
   margin: 0 0 20px 0;
@@ -1125,6 +1126,7 @@ a#gallery-link:hover {
   font-size: 14px;
   font-weight: 600;
   color: hsla(0, 0%, 20%, 1);
+  text-align: left;
 }
 .member-profile div span:last-child {
   font-weight: 400;
@@ -1290,6 +1292,23 @@ a#gallery-link:hover {
 .stream-table ul {
   margin: 0;
   padding-left: 12px;
+}
+.progress-cell {
+  display: flex;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #76d7fb 0%, #84fbbf 100%);
+  width: 40px;
+  height: 15px;
+  margin-right: 8px;
+  position: relative;
+}
+.progress-bar .gray-bar {
+  background: var(--system-background);
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /*******/

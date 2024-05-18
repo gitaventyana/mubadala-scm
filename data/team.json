@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Butti Almazrouie",
-    "photo_url": "",
+    "photo_url": "images/teams/photo-1.jpg",
     "role": "Manager, Supply Chain Management",
     "location": "Abu Dhabi",
     "email": "",
@@ -41,7 +41,7 @@
   {
     "id": 6,
     "name": "Andreas Kuswardono",
-    "photo_url": "",
+    "photo_url": "images/teams/photo-2.jpg",
     "role": "Manager, Supply Chain Management",
     "location": "Indonesia",
     "email": "",
@@ -198,7 +198,7 @@
   {
     "id": 25,
     "name": "Nik Nazrulhisham",
-    "photo_url": "",
+    "photo_url": "images/teams/photo-3.jpg",
     "role": "Manager, Supply Chain Management",
     "location": "Malaysia",
     "email": "",
@@ -308,7 +308,49 @@
         "name": "Khairil Anuar",
         "role": "Assistant Manager, MM&L",
         "email": "",
-        "teams_link": ""
+        "teams_link": "",
+        "team": [
+          {
+            "id": 39,
+            "name": "Wan Zulkifly",
+            "role": "Officer MM&L",
+            "dept": "Material Management & Logistic",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 40,
+            "name": "Vincent Gungang",
+            "role": "Superintendent, Supply Base BTU",
+            "dept": "Material Management & Logistic",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 41,
+            "name": "Ajiraiskandar Awang",
+            "role": "Analyst II, Logistic BTU",
+            "dept": "Material Management & Logistic",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 42,
+            "name": "Donny Robert Rokan",
+            "role": "Specialist, Warehouse BTU",
+            "dept": "Material Management & Logistic",
+            "email": "",
+            "teams_link": ""
+          },
+          {
+            "id": 43,
+            "name": "Sarkawi Sahari",
+            "role": "Specialist, Material BTU",
+            "dept": "Material Management & Logistic",
+            "email": "",
+            "teams_link": ""
+          }
+        ]
       }
     ]
   }
